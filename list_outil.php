@@ -23,35 +23,60 @@
 			<div class="container">
 			<!-- Header -->
 			<div id="header" class="col-12">
-				<div class="row">
-					<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
-					<div class="col-4 sign-out-link">
-						<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
-						<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+				<div class="col-12 d-none d-sm-block">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
+							<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-12 d-block d-sm-none">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-1"></i></a>
+							<a href="accueil.php?action=signout"><i class="fas fa-sign-out-alt"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="list-layer">
 				<div class="page-title"><i class="fas fa-list-ul mr-2"></i> Liste des outils</div>
 				<div class="list-container">
-				
 					<?php 
 						$tool = new Tool();
 						$toolArr = $tool->getTools();
 					?>
 				
 					<?php if(!Empty($toolArr)){ ?>
-						<section class="col-12">
+						<section class="col-12 d-block d-md-none">
+							<div class="row th-list">
+								<div class="col-6">Nom</div>
+								<div class="col-6">Auteur</div>
+							</div>
+						</section>
+
+						<section class="col-12 d-none d-md-block d-lg-block d-xl-block">
 							<div class="row th-list">
 								<div class="col-3">Nom</div>
 								<div class="col-4">Description</div>
 								<div class="col-3">Auteur</div>
 								<div class="col-2">Date création</div>
 							</div>
-						</section>	
+						</section>
+						
 						
 						<?php foreach($toolArr as $tool){ ?>
-							<section class="col-12">
+							<section class="col-12 d-block d-md-none">
+								<div class="row tool-line">
+									<div class="col-6"><?php echo(strtoupper($tool['name'])); ?></div>
+									<div class="col-6"><?php echo(ucfirst(strtolower($tool['prenom'])).' '.strtoupper($tool['lastname'])); ?> </div>
+								</div>
+							</section>
+							<section class="col-12 d-none d-md-block d-lg-block d-xl-block">
 								<div class="row tool-line">
 									<div class="col-3"><?php echo(strtoupper($tool['name'])); ?></div>
 									<div class="col-4"><?php echo($tool['description']); ?></div>

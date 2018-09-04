@@ -20,8 +20,18 @@
 			<div class="container">
 			<!-- Header -->
 			<div id="header" class="col-12">
-				<div class="row">
-					<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div><div class="col-4 sign-out-link"><a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a></div>
+				<div class="col-12 d-none d-sm-block">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link"><a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a></div>
+					</div>
+				</div>
+			
+				<div class="col-12 d-block d-sm-none">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link"><a href="accueil.php?action=signout"><i class="fas fa-sign-out-alt"></i></a></div>
+					</div>
 				</div>
 			</div>
 			<div id="home-layer">

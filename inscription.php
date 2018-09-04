@@ -29,41 +29,40 @@
 						<input type="hidden" name="source" value="inscr">
 						<section>
 							<?php if(isset($_GET['email'])) echo '<span class="validation">Ce email est déjà utlisé</span>';?>
-							<header class="header-member">Inscription</header>
-							<section>
+							<header class="header-member">Inscription</header> 
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="text" class="form-control" id="name" name="name" placeholder="PRÉNOM" value="<?php if(isset($_GET['name'])) echo $_GET['name'];?>">
+										<input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="PRÉNOM" value="<?php if(isset($_GET['name'])) echo $_GET['name'];?>">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="text" class="form-control" id="lastname" name="lastname" placeholder="NOM" value="<?php if(isset($_GET['lastname'])) echo $_GET['lastname'];?>">
+										<input type="text" class="form-control form-control-sm" id="lastname" name="lastname" placeholder="NOM" value="<?php if(isset($_GET['lastname'])) echo $_GET['lastname'];?>">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="<?php if(isset($_GET['email'])) echo $_GET['email'];?>">
+										<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="EMAIL" value="<?php if(isset($_GET['email'])) echo $_GET['email'];?>">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="password" class="form-control" id="password" name="password" placeholder="MOT DE PASSE">
+										<input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="MOT DE PASSE">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="password" class="form-control" id="confpassword" name="confpassword" placeholder="CONFIRMATION DE MOT DE PASSE">
+										<input type="password" class="form-control form-control-sm" id="confpassword" name="confpassword" placeholder="CONFIRMATION DE MOT DE PASSE">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<textarea placeholder="DESCRIPTION" class="form-control" id="description" name="description" rows="5" ><?php if(isset($_GET['description'])) echo $_GET['description'];?></textarea>
+										<textarea placeholder="DESCRIPTION" class="form-control form-control-sm" id="description" name="description" rows="5" ><?php if(isset($_GET['description'])) echo $_GET['description'];?></textarea>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<button type="submit" class="form-control btn btn-success">S'inscrire</button>
+										<button type="submit" class="form-control btn btn-success form-control-sm btn-sm">S'inscrire</button>
 									</div>
 								</div>
 							</section>

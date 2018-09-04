@@ -32,17 +32,17 @@
 							<section>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="<?php if(isset($_GET['email'])) echo $_GET['email'];?>">
+										<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="EMAIL" value="<?php if(isset($_GET['email'])) echo $_GET['email'];?>">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="password" class="form-control" id="password" name="password" placeholder="MOT DE PASSE">
+										<input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="MOT DE PASSE">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<button type="submit" class="form-control btn btn-success">Connexion</button>
+										<button type="submit" class="form-control btn btn-success form-control-sm btn-sm">Connexion</button>
 									</div>
 								</div>
 							</section>
@@ -52,7 +52,7 @@
 							<section>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<a href="inscription.php" class="form-control btn btn-primary">Inscritpion</a>
+										<a href="inscription.php" class="form-control btn btn-primary form-control-sm btn-sm">Inscritpion</a>
 									</div>
 								</div>
 							</section>

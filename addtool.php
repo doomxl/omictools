@@ -24,11 +24,23 @@
 			<div class="container">
 			<!-- Header -->
 			<div id="header" class="col-12">
-				<div class="row">
-					<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
-					<div class="col-4 sign-out-link">
-						<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
-						<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+				<div class="col-12 d-none d-sm-block">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
+							<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-12 d-block d-sm-none">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-1"></i></a>
+							<a href="accueil.php?action=signout"><i class="fas fa-sign-out-alt"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -41,17 +53,17 @@
 							<section>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<input type="text" class="form-control" id="name" name="name" placeholder="NOM DE L'OUTIL">
+										<input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="NOM DE L'OUTIL">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<textarea placeholder="DESCRIPTION" class="form-control" id="description" name="description" rows="5" ></textarea>
+										<textarea placeholder="DESCRIPTION" class="form-control form-control-sm" id="description" name="description" rows="5" ></textarea>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-12">
-										<button type="submit" class="form-control btn btn-success">Ajouter</button>
+										<button type="submit" class="form-control btn btn-success form-control-sm btn-sm">Ajouter</button>
 									</div>
 								</div>
 							</section>

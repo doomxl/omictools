@@ -2,28 +2,22 @@ html, body {
 	font-family: Arial;
 }
 
-#page-wrapper {
-	padding-top: 50px;
-}
-
 #auth-layer, #home-layer, #profil-layer, #list-layer {
 	width: 400px;
 	margin: 0 auto;
 	padding: 10px;
 }
 
-#profil-layer {
+#page-wrapper, #profil-layer, #list-layer, #home-layer   {
 	padding-top: 50px;
+}
+
+#profil-layer {
 	width: 600px;
 }
 
-#list-layer {
-	padding-top: 50px;
+#list-layer {	
 	width: 700px;
-}
-
-#home-layer {
-	padding-top: 50px;
 }
 
 .page-title {
@@ -49,6 +43,7 @@ html, body {
 
 .sign-out-link{
 	text-align: right;
+	vertical-align: middle;
 }
 
 .sign-out-link a{
@@ -92,13 +87,57 @@ html, body {
 	color: #666;
 }
 
-
 .validation {
 	color: red;
 	font-style: italic;
 	font-size: 0.7em;
 }
 
+@media screen and (max-width: 390px) {
+	
+	#page-wrapper, #profil-layer, #list-layer, #home-layer   {
+		padding-top: 5px;
+	}
+	
+	#logo img, #header .row img {
+		width: 130px;
+		height: auto;
+	}
+	
+	#auth-layer, #home-layer, #profil-layer, #list-layer {
+		width: 300px;
+		margin: 0 auto;
+		padding: 7px;
+	}
+	
+	.profil-container {
+		font-size: 0.8em;
+	}
+	
+	.page-title {
+		font-size: 0.8em;
+		font-weight: bold;
+		border-bottom:1px solid #0f6cde;
+	}
+	
+	.home-container {
+		padding: 30px 100px 0 10px;
+	}
+	
+	.header-member, .header-not-member {
+		padding-top: 5px;
+		font-size: 0.8em;
+		font-weight: bold;
+		color: #666;
+	}
+	
+	.list-container {
+		padding-top: 30px;
+		font-size: 0.9em;
+	}
+}
+
+/* placeholder color */
 form .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #aaa;
 }

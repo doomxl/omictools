@@ -24,11 +24,23 @@
 			<div class="container">
 			<!-- Header -->
 			<div id="header" class="col-12">
-				<div class="row">
-					<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
-					<div class="col-4 sign-out-link">
-						<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
-						<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+				<div class="col-12 d-none d-sm-block">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-3"></i></a>
+							<a href="accueil.php?action=signout">Déconnexion <i class="fas fa-sign-out-alt"></i></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-12 d-block d-sm-none">
+					<div class="row">
+						<div class="col-8"><img src="images/logo-white-medium.png" alt="OMICtools logo"></div>
+						<div class="col-4 sign-out-link">
+							<a href="accueil.php"><i class="fas fa-home mr-1"></i></a>
+							<a href="accueil.php?action=signout"><i class="fas fa-sign-out-alt"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,13 +75,8 @@
 						$tool = new Tool();
 						$toolArr = $tool->getToolsByAuthor($_SESSION['userID']);
 					?>
-				
-				
-						<section class="col-12">
-							<div class="row">
-								<div class="col-8 text-right"></div>
-								<div class="col-4"><a href="addtool.php" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"></i> Ajouter un outil</a></div>
-							</div>
+						<section class="col-12 text-right">
+							<a href="addtool.php" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"></i> Ajouter un outil</a>
 						</section>
 					<?php if(!Empty($toolArr)){ ?>	
 						<ul>
