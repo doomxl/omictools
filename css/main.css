@@ -1,0 +1,122 @@
+html, body {
+	font-family: Arial;
+}
+
+#page-wrapper {
+	padding-top: 50px;
+}
+
+#auth-layer, #home-layer, #profil-layer, #list-layer {
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#profil-layer {
+	padding-top: 50px;
+	width: 600px;
+}
+
+#list-layer {
+	padding-top: 50px;
+	width: 700px;
+}
+
+#home-layer {
+	padding-top: 50px;
+}
+
+.page-title {
+	font-weight: bold;
+	border-bottom:1px solid #0f6cde;
+}
+
+#header {
+	background-color: #0f6cde;
+	padding: 10px;
+}
+
+#logo {
+	text-align: center;
+	background-color: #0f6cde;
+	padding: 10px 0;
+}
+
+#logo img {
+	width: 182px;
+    height: auto;
+}
+
+.sign-out-link{
+	text-align: right;
+}
+
+.sign-out-link a{
+	color: #fff;
+}
+
+.auth-container, .home-container {
+	padding: 10px;
+}
+
+.home-container {
+	padding: 50px 200px 0 0;
+}
+
+.list-container {
+	padding: 50px 0 0 0;
+}
+
+.th-list {
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 0.8em;
+}
+
+.tool-line {
+	font-size: 0.8em;
+}
+
+.profil-container {
+	padding: 30px 0 30px 0;
+}
+
+.item{
+	font-weight: bold;
+}
+
+.header-member, .header-not-member {
+	padding-top: 15px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #666;
+}
+
+
+.validation {
+	color: red;
+	font-style: italic;
+	font-size: 0.7em;
+}
+
+form .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aaa;
+}
+form .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aaa;
+}
+form .form-control::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aaa;
+}
+
+form .form-control::placeholder { /* Most modern browsers support this now. */
+   color:    #aaa;
+}
